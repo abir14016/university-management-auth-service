@@ -12,7 +12,7 @@
     "lint-prettier": "yarn lint:check && yarn pretteir:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Abir Hasan",
+  "author": "Dev Abir",
   "license": "ISC",
   "lint-staged": {
     "src/**/.ts": "yarn lint-prettier"
@@ -35,6 +35,7 @@
     "dotenv": "^16.1.3",
     "eslint": "^8.42.0",
     "express": "^4.18.2",
-    "mongoose": "^7.2.2"
+    "mongoose": "^7.2.2",
+    "winston": "^3.9.0"
   }
 }

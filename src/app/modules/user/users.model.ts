@@ -3,6 +3,7 @@ import { IUser } from './users.interface';
 
 type UserModel = Model<IUser, object>;
 
+//schema corresponding to interface
 const userSchema = new Schema<IUser>(
   {
     id: {
@@ -24,4 +25,5 @@ const userSchema = new Schema<IUser>(
   }
 );
 
+//model
 export const User = model<IUser, UserModel>('User', userSchema);
