@@ -1,0 +1,22 @@
+{
+  message: 'Dtabase is connected successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2023-06-05T09:36:18.383Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM',
+  timestamp: '2023-06-05T09:36:19.360Z'
+}
+Mon Jun 05 2023 15:43:2 [UM] info: Dtabase is connected successfully
+Mon Jun 05 2023 15:43:2 [UM] info: Application listening on port 5000
+Mon Jun 05 2023 15:44:10 [UM] info: Dtabase is connected successfully
+Mon Jun 05 2023 15:44:10 [UM] info: Application listening on port 5000
+Mon Jun 05 2023 15:45:10 [UM] info: Dtabase is connected successfully
+Mon Jun 05 2023 15:45:10 [UM] info: Application listening on port 5000
+Mon Jun 05 2023 15:48:37 [UM] info: Dtabase is connected successfully
+Mon Jun 05 2023 15:48:37 [UM] info: Application listening on port 5000
