@@ -14,6 +14,36 @@
             "date": 1685957774211,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-05-06-15-error.log",
             "hash": "dd38dc32ad8e9a70a31b6ff1be6013e9a977bfe79e57dd72c662afaa945ea950"
+        },
+        {
+            "date": 1685979268161,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-05-06-21-error.log",
+            "hash": "bb85d1d21dec0ac8015592307db4f826558fc4005451d11c2c67218c5d84f244"
+        },
+        {
+            "date": 1685981283585,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-05-06-22-error.log",
+            "hash": "98f846c29640e96efaf9f7310d5c4d31aa89e10b3f4ce54a069f33caf407a779"
+        },
+        {
+            "date": 1686062532782,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-06-06-20-error.log",
+            "hash": "a82f090e352fc591cbcfc77fa5db6586b3cb45aa5301ffe49eecad4aab5f9ce7"
+        },
+        {
+            "date": 1686064030037,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-06-06-21-error.log",
+            "hash": "5b4ba918dd78d541ffaa163fc86e867053beb42bf644a39926ab8173017d157c"
+        },
+        {
+            "date": 1686108988392,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-07-06-09-error.log",
+            "hash": "98e89bec28ffd7c348aee06f5ef640448c75773bb8506c3cd973f430a6df6943"
+        },
+        {
+            "date": 1686110551642,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-07-06-10-error.log",
+            "hash": "70ade0d5bd264e34d791c138a169892f349e6b9fa10d2b86dcdfd8032abde0f9"
         }
     ],
     "hashType": "sha256"

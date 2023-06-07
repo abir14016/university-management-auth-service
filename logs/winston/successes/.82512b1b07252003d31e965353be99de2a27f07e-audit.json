@@ -14,6 +14,36 @@
             "date": 1685957774200,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-05-06-15-success.log",
             "hash": "698aa968e6223e08322e6bc1084b142e03a1e6553280e7ac913003462bbdd656"
+        },
+        {
+            "date": 1685979267919,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-05-06-21-success.log",
+            "hash": "17704707a0f44d43a1debb0c90b36da61088c0fc7daecb955e0775b00d43e6ef"
+        },
+        {
+            "date": 1685981283559,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-05-06-22-success.log",
+            "hash": "8ae78db9bd2661f8d1b51a45a8b495682fdeaa5ce23b1a2b70bd2717f34dc44a"
+        },
+        {
+            "date": 1686062532682,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-06-06-20-success.log",
+            "hash": "33bbb55b1020280fda392de96e9a278c19b6ac9f3330052fe73b92c44d52a81a"
+        },
+        {
+            "date": 1686064030028,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-06-06-21-success.log",
+            "hash": "3448c27325f4093b47a1f7a21e19a59eeca5b172ad5448aa6463210c8c1c31ca"
+        },
+        {
+            "date": 1686108988362,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-09-success.log",
+            "hash": "6d74d87e0eee670d8a7ed62984053203cf027e03577c06c38721ca33ff099ba3"
+        },
+        {
+            "date": 1686110551634,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-10-success.log",
+            "hash": "6b8af50bb4c0828591bbd30dbdbc43aa82b6f30801d80219ee8de8ff5f848ad9"
         }
     ],
     "hashType": "sha256"
