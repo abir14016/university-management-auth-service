@@ -12,12 +12,6 @@ const createUser: RequestHandler = async (req, res, next) => {
     });
   } catch (error) {
     next(error);
-
-    // res.status(400).json({
-    // error: error,
-    // success: false,
-    // message: 'Failes to create user',
-    // });
   }
 };
 
