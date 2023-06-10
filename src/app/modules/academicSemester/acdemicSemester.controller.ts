@@ -11,8 +11,6 @@ const createSemester = catchAsync(
       academicsemesterData
     );
 
-    next();
-
     sendResponse(res, {
       statusCode: httpStatus.OK,
       success: true,
@@ -20,11 +18,7 @@ const createSemester = catchAsync(
       data: result,
     });
 
-    // res.status(200).json({
-    //   success: true,
-    //   message: 'Semester is created successfully',
-    //   data: result,
-    // });
+    next();
   }
 );
 
