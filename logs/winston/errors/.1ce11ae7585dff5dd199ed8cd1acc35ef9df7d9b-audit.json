@@ -94,6 +94,66 @@
             "date": 1686362882813,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-10-06-08-error.log",
             "hash": "20d359f3c599bae69280a098af236785e82b704cf176f35b3290914aa99586bb"
+        },
+        {
+            "date": 1686451347194,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-08-error.log",
+            "hash": "5def1fc0aca4c7be127a6b9d85cd2d08a2c2c22356f81852cf57e57e61b39a95"
+        },
+        {
+            "date": 1686454887992,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-09-error.log",
+            "hash": "6c775163d16888bf5b6050c028d723a19093efb521c2eefac42749281c60829d"
+        },
+        {
+            "date": 1686457291695,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-10-error.log",
+            "hash": "1ca131211400e6c027382b9bc880e82c8577ab8516d8ecff2833b77bea6882bf"
+        },
+        {
+            "date": 1686460978368,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-11-error.log",
+            "hash": "bca5e4e2da6ad0071985282fc980a23c06edf513b90bd8f2edf94553e6b72da8"
+        },
+        {
+            "date": 1686463263407,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-12-error.log",
+            "hash": "32e26f0443153e076b4def8f49f213523ec8ba860a611b0150f1acea8148d698"
+        },
+        {
+            "date": 1686467299874,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-13-error.log",
+            "hash": "b5cf8f15ddab58ce886f42193330f42731f9b061c6f9c6c9c0189bdd2ed4fdb6"
+        },
+        {
+            "date": 1686470679919,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-14-error.log",
+            "hash": "d8086d8d2410c4301a40fcc8bf128bee8b4e3216cf246cbc8608a2e6fa9a250e"
+        },
+        {
+            "date": 1686475568562,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-15-error.log",
+            "hash": "56d3ddbb699ea23b999191a15cd3c44dfe10a7c6ea72f7cb8539257d7db2a7cb"
+        },
+        {
+            "date": 1686481357559,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-17-error.log",
+            "hash": "9cf7986f6a92756ee8185e046aa3aef8d721830cb947c6a2c7638f362382525d"
+        },
+        {
+            "date": 1686496303366,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-21-error.log",
+            "hash": "32fbfad7e4d73a0ac864554132bfe8a4539c66ddd96ec9929f9e4cbd291e03b3"
+        },
+        {
+            "date": 1686501224587,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-22-error.log",
+            "hash": "c34fddcbeb8cf5a792b1467b9863de36b609073eab6fd3a438f017f14d0d477f"
+        },
+        {
+            "date": 1686502833778,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-11-06-23-error.log",
+            "hash": "57d063482db5a7834f09b2c4d6bf10f2705490fa73696ed33068f7e4eebc0599"
         }
     ],
     "hashType": "sha256"
