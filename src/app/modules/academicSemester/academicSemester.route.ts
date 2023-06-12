@@ -6,12 +6,17 @@ import { AcademicSemesterController } from './acdemicSemester.controller';
 
 const router = express.Router();
 
+//router for creating a semester
 router.post(
   '/create-semester',
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
   AcademicSemesterController.createSemester
 );
 
+//router for getting single semsester
+router.get('/:id', AcademicSemesterController.getSingleSemester);
+
+//router for getting all semsesters
 router.get('/', AcademicSemesterController.getAllSemesters);
 
 export const AcademicSemesterRoutes = router;
