@@ -24,6 +24,9 @@ router.patch(
   AcademicSemesterController.updateSemester
 );
 
+//router for deleting single semester
+router.delete('/:id', AcademicSemesterController.deleteSemester);
+
 //router for getting all semsesters
 router.get('/', AcademicSemesterController.getAllSemesters);
 
