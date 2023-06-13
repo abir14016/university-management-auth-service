@@ -21,8 +21,6 @@ const createSemester = catchAsync(async (req: Request, res: Response) => {
     message: 'Academic Semester is created successfully',
     data: result,
   });
-
-  // next();
 });
 
 //controller for getting all semsesters
@@ -42,8 +40,6 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
     meta: result.meta,
     data: result.data,
   });
-
-  // next();
 });
 
 //controller for getting single semester
@@ -58,8 +54,6 @@ const getSingleSemester = catchAsync(async (req: Request, res: Response) => {
     message: 'SIngle Academic Semester retrived successfully',
     data: result,
   });
-
-  // next();
 });
 
 //controller for update semester
@@ -75,8 +69,6 @@ const updateSemester = catchAsync(async (req: Request, res: Response) => {
     message: 'Academic Semester updated successfully',
     data: result,
   });
-
-  // next();
 });
 
 export const AcademicSemesterController = {
