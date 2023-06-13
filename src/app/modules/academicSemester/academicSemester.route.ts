@@ -16,6 +16,10 @@ router.post(
 //router for getting single semsester
 router.get('/:id', AcademicSemesterController.getSingleSemester);
 
+//router for update semester
+// **patch[update] must be always before get all documents route**
+router.patch('/:id', AcademicSemesterController.updateSemester);
+
 //router for getting all semsesters
 router.get('/', AcademicSemesterController.getAllSemesters);
 
