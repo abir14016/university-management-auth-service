@@ -6,8 +6,8 @@ import {
 
 //schema corresponding to academic faculty interface
 const AcademicFacultySchema = new Schema<
-  IAcademicFaculty,
-  AcademicFacultyModel
+  IAcademicFaculty, //first parametere represents the shape of document
+  AcademicFacultyModel //second parameter represents the static method
 >(
   {
     title: {
