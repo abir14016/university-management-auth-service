@@ -9,6 +9,13 @@ const createFaculty = async (
   return result;
 };
 
+//get all academic faculties function
+const getAllFaculties = async () => {
+  const result = await AcademicFaculty.find({});
+  return result;
+};
+
 export const AcademicFacultyService = {
   createFaculty,
+  getAllFaculties,
 };
