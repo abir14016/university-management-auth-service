@@ -11,7 +11,7 @@ import {
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 
-//schema corresponding to interface
+//schema corresponding to academic semester interface
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
     title: {
