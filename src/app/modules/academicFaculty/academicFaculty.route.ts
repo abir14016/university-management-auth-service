@@ -12,6 +12,9 @@ router.post(
   AcademicFacultyController.createFaculty
 );
 
+//router for getting a single academic faculty by id
+router.get('/:id', AcademicFacultyController.getSingleFaculty);
+
 //router for getting all academic faculties
 router.get('/', AcademicFacultyController.getAllFaculties);
 
