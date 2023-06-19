@@ -17,6 +17,15 @@ router.post(
 //router for getting single department by id
 router.get('/:id', AcademicDepartmentController.getSingleDepartment);
 
+//router for updating an academic department
+router.patch(
+  '/:id',
+  validateRequest(
+    AcademicDepartmentValidation.updateAcademicDepartmentZodSchema
+  ),
+  AcademicDepartmentController.updateDepartment
+);
+
 //router for getting all academic departments
 router.get('/', AcademicDepartmentController.getAllDepartments);
 
