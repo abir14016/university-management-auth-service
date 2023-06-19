@@ -14,6 +14,9 @@ router.post(
   AcademicDepartmentController.createDepartment
 );
 
+//router for getting single department by id
+router.get('/:id', AcademicDepartmentController.getSingleDepartment);
+
 //router for getting all academic departments
 router.get('/', AcademicDepartmentController.getAllDepartments);
 
