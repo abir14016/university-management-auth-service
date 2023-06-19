@@ -22,6 +22,9 @@ router.patch(
   AcademicFacultyController.updateFaculty
 );
 
+//router for deleting academic faculty
+router.delete('/:id', AcademicFacultyController.deleteFaculty);
+
 //router for getting all academic faculties
 router.get('/', AcademicFacultyController.getAllFaculties);
 

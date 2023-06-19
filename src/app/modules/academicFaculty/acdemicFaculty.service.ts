@@ -87,10 +87,16 @@ const updateFaculty = async (
   id: string,
   payload: Partial<IAcademicFaculty>
 ) => {
-  const result = AcademicFaculty.findOneAndUpdate({ _id: id }, payload, {
+  const result = await AcademicFaculty.findOneAndUpdate({ _id: id }, payload, {
     new: true,
   });
 
+  return result;
+};
+
+//delete single faculty function
+const deleteFaculty = async (id: string): Promise<IAcademicFaculty | null> => {
+  const result = await AcademicFaculty.findByIdAndDelete(id);
   return result;
 };
 
@@ -99,4 +105,5 @@ export const AcademicFacultyService = {
   getAllFaculties,
   getSingleFaculty,
   updateFaculty,
+  deleteFaculty,
 };
