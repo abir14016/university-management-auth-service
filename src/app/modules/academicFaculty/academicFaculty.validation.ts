@@ -9,7 +9,7 @@ const createFacultyZodSchema = z.object({
   }),
 });
 
-//zod validation(schema) while creating a academic faculty
+//zod validation(schema) while updating a academic faculty
 const updateFacultyZodSchema = z.object({
   body: z.object({
     title: z.string({
