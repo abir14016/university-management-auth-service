@@ -6,86 +6,6 @@
     "auditLog": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\.82512b1b07252003d31e965353be99de2a27f07e-audit.json",
     "files": [
         {
-            "date": 1685979267919,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-05-06-21-success.log",
-            "hash": "17704707a0f44d43a1debb0c90b36da61088c0fc7daecb955e0775b00d43e6ef"
-        },
-        {
-            "date": 1685981283559,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-05-06-22-success.log",
-            "hash": "8ae78db9bd2661f8d1b51a45a8b495682fdeaa5ce23b1a2b70bd2717f34dc44a"
-        },
-        {
-            "date": 1686062532682,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-06-06-20-success.log",
-            "hash": "33bbb55b1020280fda392de96e9a278c19b6ac9f3330052fe73b92c44d52a81a"
-        },
-        {
-            "date": 1686064030028,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-06-06-21-success.log",
-            "hash": "3448c27325f4093b47a1f7a21e19a59eeca5b172ad5448aa6463210c8c1c31ca"
-        },
-        {
-            "date": 1686108988362,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-09-success.log",
-            "hash": "6d74d87e0eee670d8a7ed62984053203cf027e03577c06c38721ca33ff099ba3"
-        },
-        {
-            "date": 1686110551634,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-10-success.log",
-            "hash": "6b8af50bb4c0828591bbd30dbdbc43aa82b6f30801d80219ee8de8ff5f848ad9"
-        },
-        {
-            "date": 1686114100152,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-11-success.log",
-            "hash": "d303dd2513d2953280cfa2636500f1afebdb913119478280675ccd01eee23db3"
-        },
-        {
-            "date": 1686122371997,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-13-success.log",
-            "hash": "83da082c0544635655954c710e68fd2d50a929e1a971e7141cac8937731f0a1b"
-        },
-        {
-            "date": 1686151674003,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-07-06-21-success.log",
-            "hash": "3ab7f249177e5e7809eed1f21749d95131011579c0cbbd3073c069a79911456e"
-        },
-        {
-            "date": 1686208881804,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-08-06-13-success.log",
-            "hash": "99463e5da2b85419bfb92686ff8e2b0f54d8d2ebf0d31f414eb7c8bdfa44abc9"
-        },
-        {
-            "date": 1686216167110,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-08-06-15-success.log",
-            "hash": "2bc6ebf145973af17a02b71167049432978eceddfe71037659d7bef7d40a7e5c"
-        },
-        {
-            "date": 1686218715374,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-08-06-16-success.log",
-            "hash": "d3ab23354d9db5862c7ef1873b0262bfad59c27f236bd8258ce01f953ea8ce0f"
-        },
-        {
-            "date": 1686275467435,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-09-06-07-success.log",
-            "hash": "0969eaea0c3f008a689caeb88de3a9b01483f59ee48e99ff78c563d855a61453"
-        },
-        {
-            "date": 1686277429944,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-09-06-08-success.log",
-            "hash": "50f088bdb66062aacfa0c1e6940baf1ab764408aa8e770e54dcaa79cd11a296a"
-        },
-        {
-            "date": 1686361340602,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-10-06-07-success.log",
-            "hash": "396da037384ac64d0b6d33709bca565b4d5209002024ba9532430cd9dc84f8e8"
-        },
-        {
-            "date": 1686362882796,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-10-06-08-success.log",
-            "hash": "9388ff9a0cd824116b5d9b594224c505c79a1782ddc2921280099de3b635d6b2"
-        },
-        {
             "date": 1686451347141,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-11-06-08-success.log",
             "hash": "1f69e277d98752cbf94f623371ced3a7ce19cff6d41c4577fcf5d7b30d0ea6d9"
@@ -279,6 +199,41 @@
             "date": 1687176457484,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-19-06-18-success.log",
             "hash": "fb61f307dedee63b295f36d5c7fc238e4e1a749667ba21aaac81fc4a7cae8e59"
+        },
+        {
+            "date": 1687405935436,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-22-06-09-success.log",
+            "hash": "37f0701c2f1695ac4141ac0e91a2c5d87f7183b0e34ab6429b1086b7274e33e5"
+        },
+        {
+            "date": 1687431866840,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-22-06-17-success.log",
+            "hash": "74f0a36e6c8b17ae01e0292b174d014a16d1eba439e0ec827f04e42a5eb853c9"
+        },
+        {
+            "date": 1687443586405,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-22-06-20-success.log",
+            "hash": "110cf17a5e652417564e91ebf7402519a4ca789a0788ec950a179b94d55c9163"
+        },
+        {
+            "date": 1687490288254,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-23-06-09-success.log",
+            "hash": "cfa5e11e06f02186aee6b67767c88a79053a672d9a4f6cb1b6ca6c8635e69017"
+        },
+        {
+            "date": 1687501352651,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-23-06-12-success.log",
+            "hash": "2f1f6aeb77419a1b796763e72c0f267ee30bb86e805be8e929ef865d42f5c5bf"
+        },
+        {
+            "date": 1687655315172,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-25-06-07-success.log",
+            "hash": "23c332d0bf40458c4a992af12255fc0d38fe63f01d4cabefaf131b30006cd389"
+        },
+        {
+            "date": 1687658417383,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\successes\\UM-2023-25-06-08-success.log",
+            "hash": "d043289660a3b0422d781934a7f1100d38cbc379c65972b15992edf3c81675f9"
         }
     ],
     "hashType": "sha256"
