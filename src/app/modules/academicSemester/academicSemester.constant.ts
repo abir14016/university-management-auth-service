@@ -40,6 +40,7 @@ export const academicSemesterTitleCodeMapper: {
 };
 
 export const academicSemesterSearchAbleFields = ['title', 'code', 'year'];
+
 export const academicSemesterFilterAbleFields = [
   'searchTerm',
   'title',
