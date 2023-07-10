@@ -4,6 +4,7 @@ import config from './config/index';
 import { logger, errorLogger } from './shared/logger';
 import { Server } from 'http';
 
+//handling uncaught exception
 process.on('uncaughtException', error => {
   errorLogger.error(error);
   process.exit(1);
@@ -24,6 +25,7 @@ async function bootstrap() {
     errorLogger.error(`Failed to connect database: ${error}`);
   }
 
+  //gracefully off/terminate the server
   process.on('unhandledRejection', error => {
     // eslint-disable-next-line no-console
     console.log('Unhandled rejection detected, we are closing our server...');
