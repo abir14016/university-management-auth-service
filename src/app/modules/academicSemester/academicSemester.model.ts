@@ -12,7 +12,7 @@ import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 
 //schema corresponding to academic semester interface
-const academicSemesterSchema = new Schema<IAcademicSemester>(
+const AcademicSemesterSchema = new Schema<IAcademicSemester>(
   {
     title: {
       type: String,
@@ -41,12 +41,15 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 
 // pre hook must be before creating model. it's important. Otherwise, pre hook will not gonna work.
 //handling same year same semester issue
-academicSemesterSchema.pre('save', async function (next) {
+AcademicSemesterSchema.pre('save', async function (next) {
   const isExist = await AcademicSemester.findOne({
     title: this.title,
     year: this.year,
@@ -65,5 +68,5 @@ academicSemesterSchema.pre('save', async function (next) {
 //model
 export const AcademicSemester = model<IAcademicSemester, AcademicSemesterModel>(
   'AcademicSemester',
-  academicSemesterSchema
+  AcademicSemesterSchema
 );

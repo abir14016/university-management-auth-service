@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from 'express';
 import config from '../../config/index';
 import { IGenericErrorMessage } from '../../interfaces/error';
@@ -9,11 +13,9 @@ import handleZodError from '../../errors/handleZodError';
 import handleCastError from '../../errors/handleCastError';
 
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
-  // eslint-disable-next-line no-unused-expressions
   config.env === 'development'
-    ? // eslint-disable-next-line no-console
-      console.log('globalHandleEror ~', error)
-    : errorLogger.error('globalHandleEror ~', error);
+    ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })
+    : errorLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
 
   let statusCode = 500;
   let message = 'Something went wrong';
@@ -64,8 +66,6 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages,
     stack: config.env != 'production' ? error.stack : undefined,
   });
-
-  next();
 };
 
 export default globalErrorHandler;

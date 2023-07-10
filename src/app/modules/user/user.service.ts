@@ -31,6 +31,8 @@ const createStudent = async (
 
   // generate student id
   let newUserAllData = null;
+
+  //transaction & rollback
   const session = await mongoose.startSession();
   try {
     session.startTransaction();
@@ -50,7 +52,7 @@ const createStudent = async (
     //set student -->  _id into user.student
     user.student = newStudent[0]._id;
 
-    const newUser = await User.create([user], { session });
+    const newUser = await User.create([user], { session }); //array
 
     if (!newUser.length) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
@@ -64,6 +66,7 @@ const createStudent = async (
     await session.endSession();
     throw error;
   }
+  //transaction & rollback
 
   if (newUserAllData) {
     newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
