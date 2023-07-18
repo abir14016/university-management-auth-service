@@ -20,6 +20,15 @@ router.get(
   ManagementDepartmentController.getSingleManagementDepartment
 );
 
+//router for updating management department
+router.patch(
+  '/:id',
+  validateRequest(
+    ManagementDepartmentValidation.updateManagementDepartmentZodSchema
+  ),
+  ManagementDepartmentController.updateManagementDepartment
+);
+
 //router for getting all management departments
 router.get('/', ManagementDepartmentController.getAllManagementDepartements);
 
