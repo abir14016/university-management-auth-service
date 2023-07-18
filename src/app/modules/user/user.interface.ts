@@ -1,5 +1,3 @@
-// import { Schema, model } from 'mongoose';
-
 import { Model, Types } from 'mongoose';
 import { IStudent } from '../student/student.interface';
 
