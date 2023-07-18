@@ -96,9 +96,18 @@ const updateManagementDepartment = async (
   return result;
 };
 
+//delete management department function
+const deleteManagementDepartment = async (
+  id: string
+): Promise<IManagementDepartment | null> => {
+  const result = await ManagementDepartment.findByIdAndDelete(id);
+  return result;
+};
+
 export const ManagementDepartmentService = {
   createManagementDepartment,
   getAllManagementDepartments,
   getSingleManagementDepartment,
   updateManagementDepartment,
+  deleteManagementDepartment,
 };

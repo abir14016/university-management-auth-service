@@ -29,6 +29,12 @@ router.patch(
   ManagementDepartmentController.updateManagementDepartment
 );
 
+//router for deleting single management department
+router.delete(
+  '/:id',
+  ManagementDepartmentController.deleteManagementDepartment
+);
+
 //router for getting all management departments
 router.get('/', ManagementDepartmentController.getAllManagementDepartements);
 
