@@ -14,4 +14,7 @@ router.post(
   ManagementDepartmentController.createManagementDepartment
 );
 
+//router for getting all management departments
+router.get('/', ManagementDepartmentController.getAllManagementDepartements);
+
 export const ManagementDepartmentRoutes = router;
