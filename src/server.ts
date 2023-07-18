@@ -16,13 +16,13 @@ async function bootstrap() {
   try {
     // await mongoose.connect('mongodb://127.0.0.1:27017/university-management');
     await mongoose.connect(config.database_url as string);
-    logger.info(`💁Dtabase is connected successfully`);
+    logger.info(`✅ Dtabase is connected successfully`);
 
     server = app.listen(config.port, () => {
-      logger.info(`Application listening on port ${config.port}`);
+      logger.info(`🦻 Application listening on port ${config.port}`);
     });
   } catch (error) {
-    errorLogger.error(`Failed to connect database: ${error}`);
+    errorLogger.error(`❌ Failed to connect database: ${error}`);
   }
 
   //gracefully off/terminate the server
