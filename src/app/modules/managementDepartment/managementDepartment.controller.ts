@@ -47,7 +47,24 @@ const getAllManagementDepartements = catchAsync(
   }
 );
 
+//controller for getting single management department by id
+const getSingleManagementDepartment = catchAsync(
+  async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const result =
+      await ManagementDepartmentService.getSingleManagementDepartment(id);
+
+    sendResponse<IManagementDepartment>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Management department retieved successfully',
+      data: result,
+    });
+  }
+);
+
 export const ManagementDepartmentController = {
   createManagementDepartment,
   getAllManagementDepartements,
+  getSingleManagementDepartment,
 };
