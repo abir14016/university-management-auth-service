@@ -14,6 +14,12 @@ router.post(
   ManagementDepartmentController.createManagementDepartment
 );
 
+//router for getting single management department
+router.get(
+  '/:id',
+  ManagementDepartmentController.getSingleManagementDepartment
+);
+
 //router for getting all management departments
 router.get('/', ManagementDepartmentController.getAllManagementDepartements);
 
