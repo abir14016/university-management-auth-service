@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SortOrder } from 'mongoose';
 import { PaginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
@@ -5,6 +6,8 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import { adminSearchableFields } from './admin.constant';
 import { IAdmin, IAdminFilters } from './admin.interface';
 import { Admin } from './admin.model';
+import ApiError from '../../../errors/ApiError';
+import httpStatus from 'http-status';
 
 // get all admin with pagination, searching & filtering function
 const getAllAdmins = async (
@@ -68,7 +71,36 @@ const getSingleAdmin = async (id: string): Promise<IAdmin | null> => {
   return result;
 };
 
+//update admin function
+const updateAdmin = async (
+  id: string,
+  payload: Partial<IAdmin>
+): Promise<IAdmin | null> => {
+  const isExist = await Admin.findOne({ id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Admin not found !');
+  }
+
+  const { name, ...adminData } = payload;
+
+  const updatedStudentData: Partial<IAdmin> = { ...adminData };
+
+  if (name && Object.keys(name).length > 0) {
+    Object.keys(name).forEach(key => {
+      const nameKey = `name.${key}` as keyof Partial<IAdmin>;
+      (updatedStudentData as any)[nameKey] = name[key as keyof typeof name];
+    });
+  }
+
+  const result = await Admin.findOneAndUpdate({ id }, updatedStudentData, {
+    new: true,
+  }).populate('managementDepartment');
+  return result;
+};
+
 export const AdminService = {
   getAllAdmins,
   getSingleAdmin,
+  updateAdmin,
 };
