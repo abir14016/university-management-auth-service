@@ -8,6 +8,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { IFaculty } from './faculty.interface';
 import httpStatus from 'http-status';
 
+//controller for getting all faculties with paginatin, searching & filtering
 const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, facultyFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
@@ -26,6 +27,7 @@ const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+//controller for getting single faculty by custom id
 const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const result = await FacultyService.getSingleFaculty(id);
@@ -38,7 +40,23 @@ const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+//controller for updating single faculty by custom id and payload (data from body)
+const updateFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const updatedData = req.body;
+
+  const result = await FacultyService.updateFaculty(id, updatedData);
+
+  sendResponse<IFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'faculty updated successfully !',
+    data: result,
+  });
+});
+
 export const FacultyController = {
   getAllFaculties,
   getSingleFaculty,
+  updateFaculty,
 };

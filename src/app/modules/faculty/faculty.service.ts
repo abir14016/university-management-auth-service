@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SortOrder } from 'mongoose';
 import { PaginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
@@ -5,6 +6,8 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import { facultySearchableFields } from './faculty.constant';
 import { IFaculty, IFacultyFilters } from './faculty.interface';
 import { Faculty } from './faculty.model';
+import ApiError from '../../../errors/ApiError';
+import httpStatus from 'http-status';
 
 //get all faculties with pagination, searching & filtering function
 const getAllFaculties = async (
@@ -96,7 +99,39 @@ const getSingleFaculty = async (id: string): Promise<IFaculty | null> => {
   return result;
 };
 
+//update faculty function
+const updateFaculty = async (
+  id: string,
+  payload: Partial<IFaculty>
+): Promise<IFaculty | null> => {
+  //check whether the faculty is exist or not
+  const isExist = await Faculty.findOne({ id });
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
+  }
+
+  //distracture the embeded field[name]
+  const { name, ...FacultyData } = payload;
+  //copy the rest of the data to updatedFacultyData variable
+  const updatedFacultyData: Partial<IFaculty> = { ...FacultyData };
+
+  //handle updating embeded field
+  if (name && Object.keys(name).length > 0) {
+    Object.keys(name).forEach(key => {
+      const nameKey = `name.${key}` as keyof Partial<IFaculty>;
+      (updatedFacultyData as any)[nameKey] = name[key as keyof typeof name];
+    });
+  }
+
+  const result = await Faculty.findOneAndUpdate({ id }, updatedFacultyData, {
+    new: true,
+  });
+
+  return result;
+};
+
 export const FacultyService = {
   getAllFaculties,
   getSingleFaculty,
+  updateFaculty,
 };
