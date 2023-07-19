@@ -14,6 +14,9 @@ router.patch(
   AdminController.updateAdmin
 );
 
+//router for deleting single admin
+router.delete('/:id', AdminController.deleteAdmin);
+
 //router for getting all admins
 router.get('/', AdminController.getAllAdmins);
 
