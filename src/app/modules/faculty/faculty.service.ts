@@ -6,6 +6,7 @@ import { facultySearchableFields } from './faculty.constant';
 import { IFaculty, IFacultyFilters } from './faculty.interface';
 import { Faculty } from './faculty.model';
 
+//get all faculties with pagination, searching & filtering function
 const getAllFaculties = async (
   filters: IFacultyFilters,
   paginationOptions: IPaginationOptions
@@ -61,6 +62,41 @@ const getAllFaculties = async (
   };
 };
 
+// ===============================//
+// const getSingleFaculty = async (
+//   id: string | Types.ObjectId
+// ): Promise<IFaculty | null> => {
+//   // Check if the provided id is a valid ObjectId
+//   const isObjectId = isValidObjectId(id);
+
+//   let query;
+
+//   if (isObjectId) {
+//     // If it's a valid ObjectId, search by _id
+//     query = { _id: id };
+//   } else {
+//     // If it's a custom id, search by the custom id field (e.g., 'customIdField')
+//     query = { id: id };
+//   }
+
+//   const result = await Faculty.findOne(query)
+//     .populate('academicDepartment')
+//     .populate('academicFaculty');
+
+//   return result;
+// };
+// ===============================//
+
+//get single faculty with custom id
+const getSingleFaculty = async (id: string): Promise<IFaculty | null> => {
+  const result = await Faculty.findOne({ id })
+    .populate('academicDepartment')
+    .populate('academicFaculty');
+
+  return result;
+};
+
 export const FacultyService = {
   getAllFaculties,
+  getSingleFaculty,
 };
