@@ -74,6 +74,11 @@
             "date": 1689764496130,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-19-07-17-error.log",
             "hash": "143d515fba02c4bffb9ec90c8b892e8b54fe92f563a80a7c74ad14e6ab6bbbc1"
+        },
+        {
+            "date": 1689768616329,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-19-07-18-error.log",
+            "hash": "4b6a74f88b1580abff5f3da21a07f8bcbddfecf097e4d8c7db05dde6fdfc6f0f"
         }
     ],
     "hashType": "sha256"

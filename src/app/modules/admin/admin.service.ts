@@ -6,7 +6,7 @@ import { adminSearchableFields } from './admin.constant';
 import { IAdmin, IAdminFilters } from './admin.interface';
 import { Admin } from './admin.model';
 
-// get all faculties with pagination, searching & filtering function
+// get all admin with pagination, searching & filtering function
 const getAllAdmins = async (
   filters: IAdminFilters,
   paginationOptions: IPaginationOptions
@@ -62,6 +62,13 @@ const getAllAdmins = async (
   };
 };
 
+//get single admin by custom id function
+const getSingleAdmin = async (id: string): Promise<IAdmin | null> => {
+  const result = await Admin.findOne({ id }).populate('managementDepartment');
+  return result;
+};
+
 export const AdminService = {
   getAllAdmins,
+  getSingleAdmin,
 };
