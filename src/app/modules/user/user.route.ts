@@ -19,4 +19,11 @@ router.post(
   UserController.createFaculty
 );
 
+//router for creating user as admin
+router.post(
+  '/create-admin',
+  validateRequest(UserValidation.createAdminZodSchema),
+  UserController.createAdmin
+);
+
 export const UserRoutes = router;
