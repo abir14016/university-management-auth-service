@@ -8,6 +8,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { IAdmin } from './admin.interface';
 import httpStatus from 'http-status';
 
+//controller for getting all admins with pagination, searching & filtering
 const getAllAdmins = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, adminFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
@@ -23,6 +24,20 @@ const getAllAdmins = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+//controller for getting single admin by custom id
+const getSingleAdmin = catchAsync(async (req: Request, res: Response) => {
+  const id = req.params.id;
+  const result = await AdminService.getSingleAdmin(id);
+
+  sendResponse<IAdmin>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Admin retrieved successfully !',
+    data: result,
+  });
+});
+
 export const AdminController = {
   getAllAdmins,
+  getSingleAdmin,
 };
