@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+//login zod schema
 const loginZodSchema = z.object({
   body: z.object({
     id: z.string({
@@ -11,6 +12,7 @@ const loginZodSchema = z.object({
   }),
 });
 
+//refresh token zod schema
 const refreshTokenZodSchema = z.object({
   cookies: z.object({
     refreshToken: z.string({

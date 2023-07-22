@@ -5,6 +5,10 @@ import bcrypt from 'bcrypt';
 import config from '../../../config';
 
 //schema corresponding to interface
+//using instance methods
+// const UserSchema = new Schema<IUser, Record<string, never>, UserModel>
+
+// using statics
 const UserSchema = new Schema<IUser, UserModel>(
   {
     id: {

@@ -19,31 +19,31 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   //access to out instance menthod
   //   const isUserExist = await user.isUserExist(id); //returns Partial<IUser>
 
-  const isUserExist = await User.isUserExist(id);
-
   //check whetehr the user exist or not
+  const isUserExist = await User.isUserExist(id);
   if (!isUserExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
   }
 
   //match password
-  if (
-    isUserExist.password &&
-    !(await User.isPasswordMatched(password, isUserExist.password))
-  ) {
+  const isPasswordMatched = await User.isPasswordMatched(
+    password,
+    isUserExist.password
+  );
+  if (isUserExist.password && !isPasswordMatched) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Password is incorrect');
   }
 
   const { id: userId, role, needsPasswordChange } = isUserExist;
 
-  //create access token and refresh token
+  //create access token
   const accessToken = JwtHelpers.createToken(
     { userId, role },
     config.jwt.secret as Secret,
     config.jwt.expires_in as string
   );
 
-  //refresh token
+  //create refresh token
   const refreshToken = JwtHelpers.createToken(
     { userId, role },
     config.jwt.refresh_secret as Secret,
