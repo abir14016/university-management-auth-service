@@ -10,8 +10,8 @@ const router = express.Router();
 //router for creating a academic faculty
 router.post(
   '/create-faculty',
-  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   validateRequest(AcademicFacultyValidation.createFacultyZodSchema),
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   AcademicFacultyController.createFaculty
 );
 
@@ -30,12 +30,12 @@ router.get(
 //router for updating academic faculty
 router.patch(
   '/:id',
+  validateRequest(AcademicFacultyValidation.updateFacultyZodSchema),
   auth(
     ENUM_USER_ROLE.SUPER_ADMIN,
     ENUM_USER_ROLE.ADMIN,
     ENUM_USER_ROLE.FACULTY
   ),
-  validateRequest(AcademicFacultyValidation.updateFacultyZodSchema),
   AcademicFacultyController.updateFaculty
 );
 
