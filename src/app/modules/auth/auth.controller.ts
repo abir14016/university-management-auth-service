@@ -5,6 +5,7 @@ import { ILoginUserResponse, IRefreshTokenResponse } from './auth.interface';
 import { AuthService } from './auth.service';
 import httpStatus from 'http-status';
 import config from '../../../config';
+import ApiError from '../../../errors/ApiError';
 
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const { ...loginData } = req.body;
@@ -23,6 +24,22 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
     success: true,
     message: 'User logged in successfully !',
     data: others,
+  });
+});
+
+const changePassword = catchAsync(async (req: Request, res: Response) => {
+  const user = req.user;
+  const { ...passwordData } = req.body;
+
+  if (!user) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'unauthorized');
+  }
+  await AuthService.changePassword(user, passwordData);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Password changed successfully !',
   });
 });
 
@@ -51,4 +68,5 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
 export const AuthController = {
   loginUser,
   refreshToken,
+  changePassword,
 };
