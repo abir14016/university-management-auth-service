@@ -83,6 +83,11 @@ UserSchema.pre('save', async function (next) {
     Number(config.bcrypt_salt_rounds)
   );
 
+  //checking if the password need to be changed or not
+  if (!user.needsPasswordChange) {
+    user.passwordChangedAt = new Date();
+  }
+
   next();
 });
 

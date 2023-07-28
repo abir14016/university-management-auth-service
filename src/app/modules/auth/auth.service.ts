@@ -10,7 +10,6 @@ import {
 import { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { JwtHelpers } from '../../../helpers/jwtHelpers';
-import bcrypt from 'bcrypt';
 
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { id, password } = payload;
@@ -102,7 +101,8 @@ const changePassword = async (
   const { oldPassword, newPassword } = payload;
 
   //checking the user exist or not
-  const isUserExist = await User.isUserExist(userId);
+  const isUserExist = await User.findOne({ id: userId }).select('+password');
+
   if (!isUserExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
   }
@@ -116,21 +116,12 @@ const changePassword = async (
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Old Password is incorrect');
   }
 
-  //hash password before setting new password
-  const newHashedPassword = await bcrypt.hash(
-    newPassword,
-    Number(config.bcrypt_salt_rounds)
-  );
+  // data update
+  isUserExist.password = newPassword;
+  isUserExist.needsPasswordChange = false;
 
-  const query = { id: userId };
-
-  const updatedData = {
-    password: newHashedPassword,
-    needsPasswordChange: false,
-    passwordChangedAt: new Date(),
-  };
-
-  await User.findOneAndUpdate(query, updatedData);
+  // updating using save()
+  isUserExist.save();
 };
 
 export const AuthService = {
