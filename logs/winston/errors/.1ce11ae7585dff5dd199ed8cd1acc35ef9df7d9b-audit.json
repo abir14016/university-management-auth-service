@@ -6,11 +6,6 @@
     "auditLog": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\.1ce11ae7585dff5dd199ed8cd1acc35ef9df7d9b-audit.json",
     "files": [
         {
-            "date": 1703796390169,
-            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-29-12-02-error.log",
-            "hash": "379efa46f47281bd25377632fc0fec13e613166a6d490710a0ea801d0eb21f42"
-        },
-        {
             "date": 1704014970184,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2023-31-12-15-error.log",
             "hash": "a7e5c2432c69d444b0069de3aba023452c5c66a6d5a41a7072bd717a7851285a"
@@ -24,6 +19,21 @@
             "date": 1704919209335,
             "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2024-11-01-02-error.log",
             "hash": "fa44e52e78bf68cc8a4ac298176f792ff77bfcc953c8b7b07942768a5e4d1446"
+        },
+        {
+            "date": 1705057030303,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2024-12-01-16-error.log",
+            "hash": "51ece13dbfacd661d4a1ae0af9607b807fc9993f55bb2a78005d180de33ff5ba"
+        },
+        {
+            "date": 1705058567584,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2024-12-01-17-error.log",
+            "hash": "42603417adaf220815f15dddb92a55c6c8683a09ff64db9fd7a4635810158faf"
+        },
+        {
+            "date": 1705062012674,
+            "name": "C:\\PROGRAMMING HERO\\NEXT-LEVEL\\NOSQL-BACKEND-BRANIAC\\university-management-auth-service\\logs\\winston\\errors\\UM-2024-12-01-18-error.log",
+            "hash": "3f5dd88d9acc610ff1d48e0efd398cfe85d3d31243d6d77a15dad9068302ff97"
         }
     ],
     "hashType": "sha256"

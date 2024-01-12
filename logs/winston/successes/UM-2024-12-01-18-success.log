@@ -1,0 +1,21 @@
+Fri Jan 12 2024 18:20:37 [UM] info: ✅ Redis Connected on port: redis://localhost:6379
+Fri Jan 12 2024 18:20:42 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:20:42 [UM] info: 🦻 Application listening on port 3001
+Fri Jan 12 2024 18:20:55 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:20:56 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:20:56 [UM] info: 🦻 Application listening on port 3001
+Fri Jan 12 2024 18:27:54 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:27:59 [UM] info: 🛢 Dtabase is connected successfully
+Fri Jan 12 2024 18:27:59 [UM] info: 🦻 Application listening on port 3001
+Fri Jan 12 2024 18:30:20 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:30:22 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:30:22 [UM] info: 🦻 Application listening on port 3001
+Fri Jan 12 2024 18:32:40 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:32:42 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:32:42 [UM] info: 🗄️ Application listening on port 3001
+Fri Jan 12 2024 18:32:57 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:32:59 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:32:59 [UM] info: 🗄️  Application listening on port 3001
+Fri Jan 12 2024 18:33:18 [UM] info: ✅ Redis Connected on port redis://localhost:6379
+Fri Jan 12 2024 18:33:19 [UM] info: ✅ Dtabase is connected successfully
+Fri Jan 12 2024 18:33:19 [UM] info: 🗄️  Server Running on port 3001
